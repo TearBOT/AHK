@@ -14,7 +14,8 @@ for 1080p
 Before anything, download:
 - globals.ahk
 this is also where you can change the resolution to match your game's
-and also change the waiting times if your PC is Faster/Slower
+also change the waiting times if your PC is Faster/Slower
+you can change the hotkeys for pausing or quitting the scripts too
 
 For anything that involves doing quests, download:
 - questing.ahk
