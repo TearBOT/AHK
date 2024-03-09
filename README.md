@@ -35,6 +35,8 @@ you also need to download the corresponding images in either 720p (Standard) or 
 Download:
 - AutoFarm.ahk
 
+You need to change the CharacterIcon.png to your main character's icon on the top left of the screen inside any quest
+
 Just press the "Home" key once you're in the quest you want to farm
 Might need to change the "block" key since I'm on French keyboard
 A->Q
