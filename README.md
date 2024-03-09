@@ -4,6 +4,8 @@ autohotkey 2.0 scripts
 download it here
 https://www.autohotkey.com/
 
+might need to start any script in admin mode, didn't try without
+
 ## GBFR
 
 Here are my in game settings
