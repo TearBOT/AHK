@@ -1,5 +1,8 @@
 # AHK
-autohotkey scripts
+autohotkey 2.0 scripts
+
+download it here
+https://www.autohotkey.com/
 
 ## GBFR
 
