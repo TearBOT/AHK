@@ -47,11 +47,18 @@ Download:
 - Spin.ahk
 
 SliminMulti.ahk has 5 different positionning:
-- M for solo to be somewhat close to the back where the rainbow slime spawns
-- U for back right corner
-- I for back left corner
-- J for front left corner
-- K for front right corner
+
+#### In-Game Settings
+
+![image](https://github.com/TearBOT/AHK/assets/46834540/f73af8e5-b1b7-451c-9fdb-b7094712b78f)
+
+most important thing is
+
+- F5 for solo to be somewhat close to the back where the rainbow slime spawns
+- F1 for back right corner (for player 1)
+- F2 for back left corner (for player 2)
+- F3 for front left corner (for player 3)
+- F4 for front right corner (for player 4)
 
 Spin.ahk is something that is started automatically as long as it's in the same folder as SliminMulti.ahk and is used to spin the camera left and right
 As mentionned above you might need to change a few keys since I'm on french keyboard
