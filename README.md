@@ -52,7 +52,9 @@ SliminMulti.ahk has 5 different positionning:
 
 ![image](https://github.com/TearBOT/AHK/assets/46834540/f73af8e5-b1b7-451c-9fdb-b7094712b78f)
 
-most important thing is
+most important thing is:
+- Camera Repositioning OFF
+- Battle Camera Repositioning OFF
 
 - F5 for solo to be somewhat close to the back where the rainbow slime spawns
 - F1 for back right corner (for player 1)
