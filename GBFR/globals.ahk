@@ -3,8 +3,8 @@ ShortWait := 200
 LongWait := 1000
 VeryLongWait := 3000
 
-WindowW := 1280
-WindowH := 720
+WindowW := 1920
+WindowH := 1080
 
 End::ExitApp
 

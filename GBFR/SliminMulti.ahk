@@ -1,7 +1,7 @@
 ﻿#Requires AutoHotkey v2.0
 #Include "questing.ahk"
 
-M::
+F5::
 {
   ProcessSetPriority "High"
   Run("Spin.ahk")
@@ -70,7 +70,7 @@ MoveCharacterToLocationAtStart()
   Send "{D up}{LShift up}"
 }
 
-U::
+F1::
 {
   ProcessSetPriority "High"
   Run("Spin.ahk")
@@ -139,7 +139,7 @@ MoveCharacterToTopLeftAtStart()
   Send "{Z up}{Q up}{LShift up}"
 }
 
-I::
+F2::
 {
   ProcessSetPriority "High"
   Run("Spin.ahk")
@@ -190,7 +190,7 @@ I::
     Sleep LongWait*4
 
     ;Reward Screen
-    if (RepeatQuest())
+    if (RepeatQuest(Floor(WindowW*0.2), Floor(WindowH*0.745), Floor(WindowW*0.3), Floor(WindowH*0.785)))
       continue
   }
 }
@@ -208,7 +208,7 @@ MoveCharacterToTopRightAtStart()
   Send "{Z up}{D up}{LShift up}"
 }
 
-J::
+F3::
 {
   ProcessSetPriority "High"
   Run("Spin.ahk")
@@ -259,7 +259,7 @@ J::
     Sleep LongWait*4
 
     ;Reward Screen
-    if (RepeatQuest())
+    if (RepeatQuest(Floor(WindowW*0.2), Floor(WindowH*0.79), Floor(WindowW*0.3), Floor(WindowH*0.83)))
       continue
   }
 }
@@ -279,7 +279,7 @@ MoveCharacterToBottomLeftAtStart()
   Send "{Z up}"
 }
 
-K::
+F4::
 {
   ProcessSetPriority "High"
   Run("Spin.ahk")
@@ -330,7 +330,7 @@ K::
     Sleep LongWait*4
 
     ;Reward Screen
-    if (RepeatQuest())
+    if (RepeatQuest(Floor(WindowW*0.2), Floor(WindowH*0.835), Floor(WindowW*0.3), Floor(WindowH*0.875)))
       continue
   }
 }

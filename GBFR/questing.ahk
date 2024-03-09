@@ -57,18 +57,18 @@ RewardsDisplayed()
     return (0)
 }
 
-RepeatOff()
+RepeatOff(x, y, k, l)
 {
-  if (ImageSearch(&OutputVarX, &OutputVarY, Floor(WindowW*0.2), Floor(WindowH*0.65), Floor(WindowW*0.3), Floor(WindowH*0.75), "*40 images\NotRepeatLight.png")
-  || ImageSearch(&OutputVarX, &OutputVarY, Floor(WindowW*0.2), Floor(WindowH*0.65), Floor(WindowW*0.3), Floor(WindowH*0.75), "*40 images\NotRepeatDark.png"))
+  if (ImageSearch(&OutputVarX, &OutputVarY, x, y, k, l, "*40 images\NotRepeatLight.png")
+  || ImageSearch(&OutputVarX, &OutputVarY, x, y, k, l, "*40 images\NotRepeatDark.png"))
     return (1)
   else
     return (0)
 }
 
-RepeatOn()
+RepeatOn(x, y, k, l)
 {
-  if (ImageSearch(&OutputVarX, &OutputVarY, Floor(WindowW*0.2), Floor(WindowH*0.65), Floor(WindowW*0.3), Floor(WindowH*0.75), "*40 images\Repeat.png"))
+  if (ImageSearch(&OutputVarX, &OutputVarY, x, y, k, l, "*40 images\Repeat.png"))
     return (1)
   else
     return (0)
@@ -97,12 +97,11 @@ WaitRewardScreen()
   } Until (RewardsDisplayed() || ContinuePrompt())
 }
 
-RepeatQuest()
+RepeatQuest(x := Floor(WindowW*0.2), y := Floor(WindowH*0.69), k := Floor(WindowW*0.3), l := Floor(WindowH*0.74))
 {
-  If (RepeatOn())
+  If (RepeatOn(x, y, k, l))
     return (1)  
-
-  If (RepeatOff())
+  Else if (RepeatOff(x, y, k, l))
     TurnRepeatOn()
   Else
   {
@@ -115,9 +114,10 @@ RepeatQuest()
     Send "{Enter up}"
     Sleep LongWait
 
-    If (RepeatOff())
+    If (RepeatOff(x, y, k, l))
       TurnRepeatOn()
   }
+  return (1)
 }
 
 TurnRepeatOn()
