@@ -222,77 +222,6 @@ J::
     } Until (SlimeStart())
     Sleep ShortWait
 
-    MoveCharacterToBottomRightAtStart()
-
-    Sleep PressDuration
-    Send "{p down}"
-    Sleep ShortWait
-    Send "{p up}"
-    Sleep PressDuration
-
-    Loop
-    {
-      RakamShootLoop()
-      if (SlimeEnded())
-        Break
-      ShootLoop()
-    } Until (SlimeEnded())
-    ;Quest End
-
-    Sleep PressDuration
-    Send "{o down}"
-    Sleep ShortWait
-    Send "{o up}"
-    Sleep ShortWait
-
-    ;wait for Honor Screen
-    Loop
-    {
-      Sleep LongWait
-    } Until (HonorScreen())
-
-    ;Honor Screen
-    HonorLoop()
-    Sleep LongWait*2
-
-    WaitRewardScreen()
-    Sleep LongWait*4
-
-    ;Reward Screen
-    if (RepeatQuest())
-      continue
-  }
-}
-
-MoveCharacterToBottomRightAtStart()
-{
-  Send "{Z down}{LShift down}"
-  Sleep ShortWait*2
-  Send "{4 down}"
-  Sleep PressDuration
-  Send "{4 up}"
-  Sleep LongWait
-  Send "{D Down}"
-  Sleep ShortWait*2
-  Send "{D up}{LShift up}"
-  Send ShortWait
-  Send "{Z up}"
-}
-
-K::
-{
-  ProcessSetPriority "High"
-  Run("Spin.ahk")
-
-  loop
-  {
-    ;Quest Start
-    Loop
-    {
-      Click()
-    } Until (SlimeStart())
-    Sleep ShortWait
-
     MoveCharacterToBottomLeftAtStart()
 
     Sleep PressDuration
@@ -346,6 +275,77 @@ MoveCharacterToBottomLeftAtStart()
   Send "{Q Down}"
   Sleep ShortWait
   Send "{Q up}{LShift up}"
+  Send ShortWait
+  Send "{Z up}"
+}
+
+K::
+{
+  ProcessSetPriority "High"
+  Run("Spin.ahk")
+
+  loop
+  {
+    ;Quest Start
+    Loop
+    {
+      Click()
+    } Until (SlimeStart())
+    Sleep ShortWait
+
+    MoveCharacterToBottomRightAtStart()
+
+    Sleep PressDuration
+    Send "{p down}"
+    Sleep ShortWait
+    Send "{p up}"
+    Sleep PressDuration
+
+    Loop
+    {
+      RakamShootLoop()
+      if (SlimeEnded())
+        Break
+      ShootLoop()
+    } Until (SlimeEnded())
+    ;Quest End
+
+    Sleep PressDuration
+    Send "{o down}"
+    Sleep ShortWait
+    Send "{o up}"
+    Sleep ShortWait
+
+    ;wait for Honor Screen
+    Loop
+    {
+      Sleep LongWait
+    } Until (HonorScreen())
+
+    ;Honor Screen
+    HonorLoop()
+    Sleep LongWait*2
+
+    WaitRewardScreen()
+    Sleep LongWait*4
+
+    ;Reward Screen
+    if (RepeatQuest())
+      continue
+  }
+}
+
+MoveCharacterToBottomRightAtStart()
+{
+  Send "{Z down}{LShift down}"
+  Sleep ShortWait*2
+  Send "{4 down}"
+  Sleep PressDuration
+  Send "{4 up}"
+  Sleep LongWait
+  Send "{D Down}"
+  Sleep ShortWait*2
+  Send "{D up}{LShift up}"
   Send ShortWait
   Send "{Z up}"
 }
