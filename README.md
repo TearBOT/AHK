@@ -2,7 +2,14 @@
 autohotkey scripts
 
 ## GBFR
+
 Here are my in game settings
+
+for 720p
+![image](https://github.com/TearBOT/AHK/assets/46834540/5f002c51-8870-49bd-8129-91c327d9c456)
+
+for 1080p
+![image](https://github.com/TearBOT/AHK/assets/46834540/48235ea8-85a2-485c-92f4-4c662e53f91d)
 
 Before anything, download:
 - globals.ahk
