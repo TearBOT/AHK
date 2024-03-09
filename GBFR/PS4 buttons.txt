@@ -1,0 +1,26 @@
+Stick Gauche            X + Y
+Stick Droit             Z + R
+
+gauche                  POV27000
+bas                     POV18000
+droite                  POV9000
+haut                    POV0
+
+carré                   1
+croix                   2
+rond                    3
+triangle                4
+
+L1                      5
+R1                      6
+L2                      7
+R2                      8
+
+select                  9
+start                   10
+
+Click Stick Gauche      11
+Click Stick Droit       12
+
+PS                      13
+pad                     14
